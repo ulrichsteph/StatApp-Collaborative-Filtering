@@ -21,7 +21,7 @@ colnames(data.Movies) = c("movieID", "title", "date", "IMDbURL", vect.MovieGenre
 
 
 set.seed(1000) # avant de genere le vecteur aleatoire toujours effectuer cette commende comme ca on a tyoujours le meme resulatt
-vect.Alea=runif(nrow(data.Ratings))
+vect.Alea=runif(nrow(data.Ratings)) #
 data.Ratings=cbind(data.Ratings,vect.Alea)
 colnames(data.Ratings) = c("userID", "movieID", "rating","alea")
 
